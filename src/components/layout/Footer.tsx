@@ -81,18 +81,41 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>&copy; {currentYear} Beauty Hair. Tous droits réservés.</p>
-          <div className="flex gap-6">
-            <Link to="/privacy" className="hover:text-primary transition-colors">
-              Confidentialité
-            </Link>
-            <Link to="/terms" className="hover:text-primary transition-colors">
-              Conditions d'utilisation
-            </Link>
-            <Link to="/legal" className="hover:text-primary transition-colors">
-              Mentions légales
-            </Link>
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          {/* Kredika Partnership */}
+          <div className="text-center mb-6">
+            <p className="text-sm text-gray-400 mb-3">Système de paiement à crédit en collaboration avec</p>
+            <div className="flex items-center justify-center gap-3">
+              <div className="bg-white px-6 py-3 rounded-lg shadow-lg">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">K</span>
+                  </div>
+                  <span className="font-bold text-xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Kredika Core
+                  </span>
+                </div>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500 mt-3">
+              Solution de crédit sécurisée et flexible pour vos achats
+            </p>
+          </div>
+
+          {/* Copyright & Links */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm border-t border-gray-800 pt-6">
+            <p>&copy; {currentYear} Maguisha Shop. Tous droits réservés.</p>
+            <div className="flex gap-6">
+              <Link to="/privacy" className="hover:text-primary transition-colors">
+                Confidentialité
+              </Link>
+              <Link to="/terms" className="hover:text-primary transition-colors">
+                Conditions d'utilisation
+              </Link>
+              <Link to="/legal" className="hover:text-primary transition-colors">
+                Mentions légales
+              </Link>
+            </div>
           </div>
         </div>
       </div>

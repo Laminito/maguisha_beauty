@@ -95,9 +95,9 @@ export default function Home() {
           <ProductList products={featuredProducts} loading={loading} />
 
           <div className="text-center mt-12">
-            <Link to="/products" className="btn btn-primary btn-lg">
+            <Link to="/products" className="btn-primary inline-flex items-center gap-2">
               Voir tous les produits
-              <ArrowRightIcon className="w-5 h-5 ml-2" />
+              <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>
         </div>

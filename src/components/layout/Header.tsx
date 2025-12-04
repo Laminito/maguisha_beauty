@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
+import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon, CalendarDaysIcon } from '@heroicons/react/24/outline';
 import { useCartStore } from '../../store/cartStore';
 import { useAuthStore } from '../../store/authStore';
 import { useState } from 'react';
@@ -69,6 +69,15 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
+            {/* Admin Bookings */}
+            <Link 
+              to="/admin/bookings" 
+              className="hidden md:flex items-center gap-2 text-sm hover:text-primary transition-colors"
+              title="Gestion des rendez-vous"
+            >
+              <CalendarDaysIcon className="w-6 h-6" />
+            </Link>
+
             {/* Cart */}
             <Link to="/cart" className="relative hover:text-primary transition-colors">
               <ShoppingCartIcon className="w-6 h-6" />
@@ -157,6 +166,11 @@ export default function Header() {
             <li>
               <Link to="/" className="block py-2 hover:text-primary transition-colors font-medium">
                 Accueil
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className="block py-2 hover:text-primary transition-colors font-medium">
+                💇‍♀️ Salon de Beauté
               </Link>
             </li>
             {categories.map((category) => (

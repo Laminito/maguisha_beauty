@@ -5,6 +5,9 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
+import Services from './pages/Services';
+import Booking from './pages/Booking';
+import AdminBookings from './pages/AdminBookings';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
@@ -18,6 +21,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/admin/bookings" element={<AdminBookings />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
