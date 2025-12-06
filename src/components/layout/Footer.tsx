@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-white font-heading font-bold text-lg mb-4">DjaDja Touradj</h3>
+            <h3 className="text-white font-heading font-bold text-lg mb-4">Adja Intima</h3>
             <p className="text-sm mb-4">
-              Adja Intima - Votre référence pour la beauté, la cosmétique et les soins.
+              Votre référence pour la beauté, la cosmétique et les soins.
               Ouvert 24 h/24. Paiement cash ou à crédit disponible.
             </p>
             <div className="flex gap-4">

@@ -44,8 +44,8 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2">
             <AdjaIntimaLogo width={50} height={50} />
             <div className="hidden md:block">
-              <h1 className="text-2xl font-heading font-bold gradient-text">DjaDja Touradj</h1>
-              <p className="text-xs text-gray-500">Adja Intima - Beauté, cosmétique et soins</p>
+              <h1 className="text-2xl font-heading font-bold gradient-text">Adja Intima</h1>
+              <p className="text-xs text-gray-500">Beauté, cosmétique et soins</p>
             </div>
           </Link>
 

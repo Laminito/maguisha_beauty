@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-3xl">
             <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6 animate-fade-in">
-              DjaDja Touradj - Adja Intima
+              Adja Intima
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
               Beauté, cosmétique et soins pour sublimer votre bien-être au quotidien.
