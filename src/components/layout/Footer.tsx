@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-white font-heading font-bold text-lg mb-4">Maguisha Shop</h3>
+            <h3 className="text-white font-heading font-bold text-lg mb-4">ADJA Intima</h3>
             <p className="text-sm mb-4">
-              Votre boutique de référence pour la beauté, la mode et le bien-être féminin.
+              Votre boutique de référence pour la lingerie, les produits intimes et le bien-être féminin.
               Paiement cash ou à crédit disponible.
             </p>
             <div className="flex gap-4">
@@ -41,10 +41,10 @@ export default function Footer() {
             <h3 className="text-white font-heading font-bold text-lg mb-4">Liens Rapides</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/products" className="hover:text-primary transition-colors">Tous les Produits</Link></li>
-              <li><Link to="/products?category=wigs" className="hover:text-primary transition-colors">Perruques</Link></li>
-              <li><Link to="/products?category=weaves" className="hover:text-primary transition-colors">Tissages</Link></li>
-              <li><Link to="/products?category=extensions" className="hover:text-primary transition-colors">Extensions</Link></li>
-              <li><Link to="/products?category=hair-care" className="hover:text-primary transition-colors">Soins Capillaires</Link></li>
+              <li><Link to="/products?category=lingerie" className="hover:text-primary transition-colors">Lingerie</Link></li>
+              <li><Link to="/products?category=sleepwear" className="hover:text-primary transition-colors">Vêtements de Nuit</Link></li>
+              <li><Link to="/products?category=intimate" className="hover:text-primary transition-colors">Produits Intimes</Link></li>
+              <li><Link to="/products?category=wellness" className="hover:text-primary transition-colors">Bien-Être</Link></li>
             </ul>
           </div>
 
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <EnvelopeIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                <span>contact@beautyhair.sn</span>
+                <span>contact@adjaintima.sn</span>
               </li>
             </ul>
           </div>
@@ -104,7 +104,7 @@ export default function Footer() {
 
           {/* Copyright & Links */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm border-t border-gray-800 pt-6">
-            <p>&copy; {currentYear} Maguisha Shop. Tous droits réservés.</p>
+            <p>&copy; {currentYear} ADJA Intima. Tous droits réservés.</p>
             <div className="flex gap-6">
               <Link to="/privacy" className="hover:text-primary transition-colors">
                 Confidentialité
