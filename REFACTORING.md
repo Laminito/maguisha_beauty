@@ -1,10 +1,12 @@
-# ADJA Intima - Refactoring Documentation
+# DjaDja Touradj - Adja Intima - Refactoring Documentation
 
 ## Changements effectués sur la branche `djadja-intima`
 
 ### 1. **Nouveau Branding**
-- **Nom**: Maguisha Shop → **ADJA Intima**
-- **Slogan**: "Lingerie & Bien-Être"
+- **Nom principal**: DjaDja Touradj
+- **Nom commercial**: Adja Intima
+- **Slogan**: "Beauté, cosmétique et soins"
+- **Horaires**: Ouvert 24 h/24
 - **Logo**: Nouveau logo SVG créé avec une silhouette féminine et une branche d'olivier
 
 ### 2. **Nouvelle Palette de Couleurs**
@@ -23,13 +25,14 @@ Tous les éléments liés au salon de beauté ont été retirés:
 - ❌ Icône calendrier pour les rendez-vous
 - ❌ Imports des composants Services, Booking, AdminBookings
 
-### 4. **Focus sur Lingerie & Bien-Être**
-Catégories conservées et réorganisées:
-- ✅ Lingerie (priorité)
-- ✅ Vêtements de Nuit
+### 4. **Focus sur Beauté, Cosmétique & Soins**
+Catégories principales (par ordre de priorité):
+- ✅ Beauté
+- ✅ Cosmétique
+- ✅ Soins
+- ✅ Lingerie
 - ✅ Produits Intimes
 - ✅ Bien-Être
-- ✅ Beauté
 - ✅ Accessoires
 
 Catégories supprimées:
@@ -37,6 +40,7 @@ Catégories supprimées:
 - ❌ Tissages
 - ❌ Extensions
 - ❌ Soins Capillaires
+- ❌ Vêtements de Nuit (remplacé par focus cosmétique)
 
 ### 5. **Modifications des Fichiers**
 
@@ -54,15 +58,18 @@ Catégories supprimées:
 - Suppression de l'icône calendrier
 
 #### `src/components/layout/Footer.tsx`
-- Nom: ADJA Intima
-- Email: contact@adjaintima.sn
-- Liens rapides mis à jour (lingerie, bien-être)
-- Copyright: ADJA Intima
+- Nom : DjaDja Touradj - Adja Intima
+- Email : contact@adjaintima.sn
+- Liens rapides mis à jour (beauté, cosmétique, soins)
+- Information "Ouvert 24 h/24" ajoutée
+- Copyright : DjaDja Touradj - Adja Intima
 
 #### `src/pages/Home.tsx`
-- Titre et description actualisés
-- Features adaptées (qualité premium au lieu de "100% naturel")
-- Catégories réorganisées
+- Titre : "DjaDja Touradj - Adja Intima"
+- Description : "Beauté, cosmétique et soins"
+- Features adaptées (qualité premium, service 24/7)
+- Catégories réorganisées (beauté, cosmétique, soins en priorité)
+- Mention "Ouvert 24 h/24" ajoutée
 - Témoignages mis à jour
 
 #### `src/App.tsx`
