@@ -12,11 +12,12 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
-    { name: 'Lingerie', path: '/products?category=lingerie' },
-    { name: 'Nuit', path: '/products?category=sleepwear' },
-    { name: 'Intimes', path: '/products?category=intimate' },
-    { name: 'Bien-Être', path: '/products?category=wellness' },
     { name: 'Beauté', path: '/products?category=beauty' },
+    { name: 'Cosmétique', path: '/products?category=cosmetic' },
+    { name: 'Soins', path: '/products?category=care' },
+    { name: 'Lingerie', path: '/products?category=lingerie' },
+    { name: 'Intimes', path: '/products?category=intimate' },
+    { name: 'Bien-être', path: '/products?category=wellness' },
     { name: 'Accessoires', path: '/products?category=accessories' },
   ];
 
@@ -32,7 +33,7 @@ export default function Header() {
       {/* Top Bar */}
       <div className="bg-gradient-primary text-white py-2">
         <div className="container mx-auto px-4 text-center text-sm">
-          🎉 Paiement à crédit disponible - Jusqu'à 12 mois sans frais !
+          🎉 Ouvert 24 h/24 - Paiement à crédit disponible jusqu'à 12 mois !
         </div>
       </div>
 
@@ -43,8 +44,8 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2">
             <AdjaIntimaLogo width={50} height={50} />
             <div className="hidden md:block">
-              <h1 className="text-2xl font-heading font-bold gradient-text">ADJA Intima</h1>
-              <p className="text-xs text-gray-500">Lingerie & Bien-Être</p>
+              <h1 className="text-2xl font-heading font-bold gradient-text">DjaDja Touradj</h1>
+              <p className="text-xs text-gray-500">Adja Intima - Beauté, cosmétique et soins</p>
             </div>
           </Link>
 
