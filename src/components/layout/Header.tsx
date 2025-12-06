@@ -164,12 +164,20 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <ul className={`md:flex md:items-center md:gap-8 py-3 ${mobileMenuOpen ? 'block' : 'hidden md:flex'}`}>
             <li>
-              <Link to="/" className="block py-2 hover:text-primary transition-colors font-medium">
+              <Link 
+                to="/" 
+                className="block py-2 hover:text-primary transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Accueil
               </Link>
             </li>
             <li>
-              <Link to="/services" className="block py-2 hover:text-primary transition-colors font-medium">
+              <Link 
+                to="/services" 
+                className="block py-2 hover:text-primary transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 💇‍♀️ Salon de Beauté
               </Link>
             </li>
@@ -178,6 +186,7 @@ export default function Header() {
                 <Link
                   to={category.path}
                   className="block py-2 hover:text-primary transition-colors font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {category.name}
                 </Link>
@@ -187,6 +196,7 @@ export default function Header() {
               <Link
                 to="/credit-info"
                 className="block py-2 text-secondary hover:text-secondary-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 💳 Paiement à Crédit
               </Link>
