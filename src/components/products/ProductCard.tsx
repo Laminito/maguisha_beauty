@@ -168,7 +168,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <button
               onClick={handleReserveCash}
               disabled={!product.inStock}
-              className="btn w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white text-sm py-2 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn w-full bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white text-sm py-2 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
             >
               <BanknotesIcon className="w-4 h-4" />
               Réserver Cash
@@ -178,7 +178,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               <button
                 onClick={handleReserveCredit}
                 disabled={!product.inStock}
-                className="btn w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white text-sm py-2 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn w-full bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-600 hover:to-orange-500 text-white text-sm py-2 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-md hover:shadow-lg"
               >
                 <CreditCardIcon className="w-4 h-4" />
                 Réserver Crédit

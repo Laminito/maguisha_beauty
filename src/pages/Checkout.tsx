@@ -301,8 +301,8 @@ export default function Checkout() {
                   </div>
 
                   {totalAmount < 10000 && (
-                    <div className="card p-4 bg-blue-50 border border-blue-200">
-                      <p className="text-sm text-blue-800">
+                    <div className="card p-4 bg-orange-50 border border-orange-200">
+                      <p className="text-sm text-orange-800">
                         ℹ️ Le paiement à crédit est disponible uniquement pour les achats de 10 000 FCFA et plus.
                       </p>
                     </div>

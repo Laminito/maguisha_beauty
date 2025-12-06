@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon, CalendarDaysIcon } from '@heroicons/react/24/outline';
+import { ShoppingCartIcon, UserIcon, MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import { useCartStore } from '../../store/cartStore';
 import { useAuthStore } from '../../store/authStore';
 import { useState } from 'react';
+import AdjaIntimaLogo from '../../assets/logos/AdjaIntimaLogo';
 
 export default function Header() {
   const { totalItems } = useCartStore();
@@ -11,16 +12,13 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
-    { name: 'Perruques', path: '/products?category=wigs' },
-    { name: 'Tissages', path: '/products?category=weaves' },
-    { name: 'Extensions', path: '/products?category=extensions' },
-    { name: 'Soins', path: '/products?category=hair-care' },
-    { name: 'Lingerie', path: '/products?category=lingerie' },
-    { name: 'Nuit', path: '/products?category=sleepwear' },
-    { name: 'Accessoires', path: '/products?category=accessories' },
     { name: 'Beauté', path: '/products?category=beauty' },
+    { name: 'Cosmétique', path: '/products?category=cosmetic' },
+    { name: 'Soins', path: '/products?category=care' },
+    { name: 'Lingerie', path: '/products?category=lingerie' },
     { name: 'Intimes', path: '/products?category=intimate' },
-    { name: 'Bien-Être', path: '/products?category=wellness' },
+    { name: 'Bien-être', path: '/products?category=wellness' },
+    { name: 'Accessoires', path: '/products?category=accessories' },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
@@ -35,7 +33,7 @@ export default function Header() {
       {/* Top Bar */}
       <div className="bg-gradient-primary text-white py-2">
         <div className="container mx-auto px-4 text-center text-sm">
-          🎉 Paiement à crédit disponible - Jusqu'à 12 mois sans frais !
+          🎉 Ouvert 24 h/24 - Paiement à crédit disponible jusqu'à 12 mois !
         </div>
       </div>
 
@@ -44,12 +42,10 @@ export default function Header() {
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
-            </div>
+            <AdjaIntimaLogo width={50} height={50} />
             <div className="hidden md:block">
-              <h1 className="text-2xl font-heading font-bold gradient-text">Maguisha Shop</h1>
-              <p className="text-xs text-gray-500">Beauté, Mode & Bien-Être</p>
+              <h1 className="text-2xl font-heading font-bold gradient-text">Adja Intima</h1>
+              <p className="text-xs text-gray-500">Beauté, cosmétique et soins</p>
             </div>
           </Link>
 
@@ -69,15 +65,6 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            {/* Admin Bookings */}
-            <Link 
-              to="/admin/bookings" 
-              className="hidden md:flex items-center gap-2 text-sm hover:text-primary transition-colors"
-              title="Gestion des rendez-vous"
-            >
-              <CalendarDaysIcon className="w-6 h-6" />
-            </Link>
-
             {/* Cart */}
             <Link to="/cart" className="relative hover:text-primary transition-colors">
               <ShoppingCartIcon className="w-6 h-6" />
@@ -170,15 +157,6 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Accueil
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/services" 
-                className="block py-2 hover:text-primary transition-colors font-medium"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                💇‍♀️ Salon de Beauté
               </Link>
             </li>
             {categories.map((category) => (

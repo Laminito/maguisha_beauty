@@ -350,7 +350,7 @@ export default function ProductDetail() {
                     <button
                       onClick={handleReserveCredit}
                       disabled={!product.inStock}
-                      className="btn-primary w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600"
+                      className="btn w-full flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-400 hover:from-amber-600 hover:to-orange-500 text-white shadow-md hover:shadow-lg transition-all"
                     >
                       <CreditCardIcon className="w-5 h-5" />
                       Réserver - Paiement à Crédit

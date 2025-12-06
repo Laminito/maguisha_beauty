@@ -23,12 +23,12 @@ export default function Home() {
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-3xl">
             <h1 className="font-heading font-bold text-4xl md:text-6xl mb-6 animate-fade-in">
-              Maguisha Shop - Beauté, Mode & Bien-Être
+              Adja Intima
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-90 animate-slide-up">
-              Cheveux naturels, lingerie élégante, cosmétiques et produits de bien-être.
+              Beauté, cosmétique et soins pour sublimer votre bien-être au quotidien.
               <br />
-              <span className="font-bold">Paiement à crédit jusqu'à 12 mois !</span>
+              <span className="font-bold">Ouvert 24 h/24 - Paiement à crédit jusqu'à 12 mois !</span>
             </p>
             <div className="flex flex-wrap gap-4 animate-slide-up">
               <Link to="/products" className="btn bg-white text-primary hover:bg-gray-100 text-lg px-8 py-4">
@@ -51,9 +51,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <SparklesIcon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-heading font-bold text-xl mb-2">100% Naturel</h3>
+              <h3 className="font-heading font-bold text-xl mb-2">Qualité Premium</h3>
               <p className="text-gray-600">
-                Cheveux naturels vierges de qualité premium importés du Brésil, Pérou et Malaisie
+                Produits de beauté, cosmétique et soins de haute qualité pour sublimer votre bien-être
               </p>
             </div>
 
@@ -71,9 +71,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <TruckIcon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-heading font-bold text-xl mb-2">Livraison Rapide</h3>
+              <h3 className="font-heading font-bold text-xl mb-2">Service 24/7</h3>
               <p className="text-gray-600">
-                Livraison gratuite à Dakar sous 24-48h. Service professionnel et soigné
+                Ouvert 24 h/24. Livraison gratuite à Dakar sous 24-48h. Service professionnel et soigné
               </p>
             </div>
           </div>
@@ -134,44 +134,24 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {[
               {
-                name: 'Perruques',
-                image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500',
-                path: '/products?category=wigs',
+                name: 'Beauté',
+                image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500',
+                path: '/products?category=beauty',
               },
               {
-                name: 'Tissages',
-                image: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500',
-                path: '/products?category=weaves',
-              },
-              {
-                name: 'Extensions',
-                image: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=500',
-                path: '/products?category=extensions',
+                name: 'Cosmétique',
+                image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500',
+                path: '/products?category=cosmetic',
               },
               {
                 name: 'Soins',
                 image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500',
-                path: '/products?category=hair-care',
+                path: '/products?category=care',
               },
               {
                 name: 'Lingerie',
                 image: 'https://images.unsplash.com/photo-1583225214464-9296029427aa?w=500',
                 path: '/products?category=lingerie',
-              },
-              {
-                name: 'Nuit',
-                image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500',
-                path: '/products?category=sleepwear',
-              },
-              {
-                name: 'Accessoires',
-                image: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=500',
-                path: '/products?category=accessories',
-              },
-              {
-                name: 'Beauté',
-                image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500',
-                path: '/products?category=beauty',
               },
               {
                 name: 'Intimes',
@@ -180,8 +160,13 @@ export default function Home() {
               },
               {
                 name: 'Bien-être',
-                image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500',
+                image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=500',
                 path: '/products?category=wellness',
+              },
+              {
+                name: 'Accessoires',
+                image: 'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=500',
+                path: '/products?category=accessories',
               },
             ].map((category) => (
               <Link
@@ -222,12 +207,12 @@ export default function Home() {
               {
                 name: 'Fatou M.',
                 rating: 5,
-                text: 'Livraison rapide, service client au top. Ma perruque est magnifique et naturelle.',
+                text: 'Lingerie magnifique et confortable. Livraison rapide, service client au top !',
               },
               {
                 name: 'Marième S.',
                 rating: 5,
-                text: 'Grâce au paiement en 6 mois, j\'ai pu m\'offrir la perruque de mes rêves. Merci Beauty Hair !',
+                text: 'Grâce au paiement en 6 mois, j\'ai pu renouveler toute ma garde-robe intime. Merci ADJA Intima !',
               },
             ].map((testimonial, index) => (
               <div key={index} className="card p-6">
